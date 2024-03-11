@@ -1343,7 +1343,6 @@ tipologia.push(pedido_9_1);
 tipologia.push(pedido_9_2);
 tipologia.push(pedido_9_4);
 
-// Función para quitar acentos de una cadena
 function quitarAcentos(cadena) {
   return cadena.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
@@ -1352,15 +1351,11 @@ function buscarCoincidencias() {
   let input = quitarAcentos(document.getElementById("buscar").value.trim().toLowerCase()); // Obtener el valor del input y quitar acentos
   let resultadosDiv = document.querySelector(".resultados");
 
-  // Limpiar resultados anteriores
   resultadosDiv.innerHTML = "";
 
-  // Verificar si el campo de búsqueda está vacío
   if (input === "") {
-    return; // No hacer nada si el campo está vacío
+    return;
   }
-
-  // Supongamos que tipologia es un array de arrays
   tipologia.forEach(function (pedido) {
     pedido.forEach(function (elemento) {
       if (quitarAcentos(elemento.toLowerCase()).includes(input)) {
@@ -1371,10 +1366,9 @@ function buscarCoincidencias() {
     });
   });
 }
-  // Manejar el evento de entrada en el campo de búsqueda
-  document.getElementById("buscar").addEventListener("input", buscarCoincidencias);
+document.getElementById("buscar").addEventListener("input", buscarCoincidencias);
 
-  const $grupo = document.getElementById('grupo');
+const $grupo = document.getElementById('grupo');
 const $tipo = document.getElementById('tipo');
 const $pedido = document.getElementById('pedido');
 

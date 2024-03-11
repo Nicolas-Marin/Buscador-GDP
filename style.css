@@ -17,8 +17,8 @@
     justify-content: center;
 }
 .barra input{
-    margin: 2rem 0;
-    width: 98%;
+    margin: 2rem 5%;
+    width: 90%;
     height: 3rem;
     font-size: 2rem;
     padding: 0.6rem;
@@ -47,7 +47,7 @@ html{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    min-height: 500px;
+    min-height: 250px;
     border-style: solid ;
 }
 .cuadro h2{
@@ -57,8 +57,8 @@ html{
 }
 .resultados{
     width: 100%;
-    min-height: 500px;
-    border-top: 10px double;
+    min-height: 250px;
+    border-top: 10px solid;
     background: #f2f2f2;
     text-align: left;
 }
