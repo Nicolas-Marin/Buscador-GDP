@@ -1,0 +1,69 @@
+.titulo{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white !important;
+    font-size: 2.5rem;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.barra input{
+    margin: 2rem 0;
+    width: 98%;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 0.6rem;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.up{
+    height: 110px;
+    background-color: black !important;;
+}
+body{
+    background-image: url(edificio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+    margin: 0%;
+}
+
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 500px;
+    border-style: solid ;
+}
+.cuadro h2{
+    margin: 1rem;
+    /* color: #50007f !important; */
+    color: white !important;
+}
+.resultados{
+    width: 100%;
+    min-height: 500px;
+    border-top: 10px double;
+    background: #f2f2f2;
+    text-align: left;
+}
+li{
+    list-style: none;
+    padding: 1rem;
+    font-weight: bolder;
+}
