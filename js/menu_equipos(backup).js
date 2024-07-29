@@ -11,11 +11,11 @@ const grupos = [
     '02 - INFRAESTRUCTURA ON PREMISE / CLOUD / DATAOPS',
     '03 - ASESORAMIENTO // GESTION // COMUNICACIONES Y CONTENIDO PARA LA ATENCIÓN',
     '04 - SOPORTE TECNICO (HARDWARE / SOFTWARE)',
-    '05 - CLOUDOPS',
+    '05 - DEVOPS',
     // "06 - ANALISIS CREDITICIO",
     '07 - INFRAESTRUCTURA NETSECOPS ON PREMISE / CLOUD',
     '08 - PIPELINE CI / CD',
-    '09 - TABLEROS RED COMERCIAL (Metas / Valor Real)',
+    '09 - TABLERO COMERCIAL (MENSUAL / REPORTE ANEXO)',
     '10 - TABLERO DE OBJETIVOS FIJOS (TOFi)',
     // "11 - RECLASIFICACIÓN DE GASTOS",
     '12 - INFORMACIÓN',
@@ -33,7 +33,6 @@ const grupos = [
     '24 - SOLUCIONES DE MERCHANTS',
     '25 - TECH ENABLERS',
     '26 - SOLUCIONES BACKOFFICE ONBO',
-    '27 - QA PRACTICE / QA AUTOMATION',
 ];
 
 // ------- Listas que tienen relación con los grupos ------------------------
@@ -69,13 +68,13 @@ const tipo_4 = [
     '04.07 - DISPOSITIVOS DE CONECTIVIDAD MÓVIL 4G',
     // "04.08 - RECUPERAR ARCHIVOS",
     '04.09 - LINEA DE ALARMA',
-    // '04.10 - BACK-OFFICE SAP/GESTAR',
+    '04.10 - BACK-OFFICE SAP/GESTAR',
     '04.11 - TELEFONIA COMPORATIVA CISCO',
     '04.12 - TELEFONÍA CENTRO DE CONTACTO',
     '04.13 - TELEFONIA MOVIL',
 ];
 
-const tipo_5 = ['', '05.01 - MIGRACIÓN', '05.02 - REQUERIMIENTO'];
+const tipo_5 = ['', '05.01 - INCIDENTE', '05.02 - REQUERIMIENTO'];
 
 const tipo_6 = ['', '06.01 - CONSULTA', '06.02 - PEDIDOS', '06.03 - RECLAMOS'];
 
@@ -91,7 +90,7 @@ const tipo_8 = ['', '08.01 - REQUERIMIENTO ', '08.02 - INCIDENTE'];
 const tipo_9 = [
     '',
     '09.01 - TITULARES ',
-    // '09.02 - VENTAS',
+    '09.02 - VENTAS',
     '09.03 - MEDIUM MERCHANTS',
     '09.04 - SMALL MERCHANTS',
     // "09.05 - INDICADOR COMERCIOS ACTIVOS",
@@ -112,7 +111,7 @@ const tipo_13 = [
 const tipo_14 = [
     '',
     '14.01 - MERCHANTS: ADQUIRENCIA / TOQUE',
-    "14.02 - NAVE",
+    // "14.02 - TOQUE",
     '14.03 - CARDS & DELIVERY',
     '14.04 - TERMINALES',
     '14.05 - RANTY',
@@ -120,9 +119,6 @@ const tipo_14 = [
     '14.07 - CORE BANKING',
     '14.08 - TARJETA DE CRÉDITO IN APP',
     '14.09 - PROMOCIONES CON TARJETA DE DÉBITO',
-    '14.10 - SEGUROS',
-    '14.11 - HOME',
-    '14.12 - MGX - TARJETA DE CRÉDITO',
 ];
 
 const tipo_15 = [
@@ -136,7 +132,7 @@ const tipo_15 = [
     '15.07 - GCP',
     '15.08 - GSUITE',
     '15.09 - AZURE',
-    // '15.10 - AUTH0',
+    '15.10 - AUTH0',
     '15.11 - INCONVENIENTES',
     '15.12 - EXCEPTUAR MFA',
     '15.13 - CRM',
@@ -153,8 +149,6 @@ const tipo_15 = [
     '15.24 - BASE DE DATOS ON PREMISE',
     '15.25 - GESTION SOBRE USUARIOS PAGINA DE ABOGADOS',
     '15.26 - CREACION DE CERTIFICADOS',
-    '15.27 - VAULT',
-    '15.28 - RECAPTCHA',
 ];
 
 const tipo_16 = [
@@ -237,13 +231,9 @@ const tipo_25 = [
     '25.05 COMPLIANCE SOLUTIONS',
 ];
 
-const tipo_26 = ['', '26.01 ONBOARDING'];
-
-const tipo_27 = [
+const tipo_26 = [
     '',
-    '27.01 SOLICITUDES',
-    '27.02 MANTENIMIENTO',
-    '27.03 CONSULTAS',
+    '26.01 ONBOARDING',
 ];
 // ------------------------------------------------------------------------------
 // ---------- Listas de pedidos que tienen relación con los tipos ---------------
@@ -270,7 +260,7 @@ const pedido_1_1 = [
     // "01.01.21 - NX SUITE",
     '01.01.22 - NX SUITE',
     '01.01.23 - BONX',
-    '01.01.24 - CRM ',
+    '01.01.24 - CRM CUSTOMER SERVICE',
     '01.01.25 - GDD, TURNERO',
     '01.01.26 - ACQUIER PROCESSING',
 ];
@@ -279,9 +269,9 @@ const pedido_1_2 = ['', '01.02.01 - CASOS ONBOARDING', '01.02.02 - CASOS CRM'];
 
 const pedido_1_3 = [
     '',
-    // '01.03.01 - GESTIÓN DE USUARIOS',
-    // '01.03.02 - GESTIÓN DE GRUPOS / LISTAS DE DIFUSIÓN',
-    // '01.03.03 - GESTIÓN DE CUENTAS DE SERVICIO',
+    '01.03.01 - GESTIÓN DE USUARIOS',
+    '01.03.02 - GESTIÓN DE GRUPOS / LISTAS DE DIFUSIÓN',
+    '01.03.03 - GESTIÓN DE CUENTAS DE SERVICIO',
     '01.03.04 - GESTIÓN DE MAILS / CORREOS',
     '01.03.05 - GESTIÓN DE EVENTOS',
     '01.03.06 - GESTIÓN DE MEETS',
@@ -321,7 +311,7 @@ const pedido_1_6 = [
 
 const pedido_2_1 = [
     '',
-    '02.01.01 - DATAOPS LIQUIBASE',
+    '02.01.01 - BASES DE DATOS',
     '02.01.01 - COLAS MQ',
     '02.01.02 - CLOUDOPS / DEVOPS',
     '02.01.03 - DATAOPS TARJETA',
@@ -332,7 +322,7 @@ const pedido_2_1 = [
 
 const pedido_2_2 = [
     '',
-    // '02.02.01 - BASES DE DATOS',
+    '02.02.01 - BASES DE DATOS',
     '02.02.01 - COLAS MQ',
     '02.02.01 - SERVIDORES',
     '02.02.01 - STORAGE',
@@ -364,8 +354,8 @@ const pedido_3_2 = [
 ];
 const pedido_4_1 = [
     '',
-    '04.01.01 - SOPORTE PARA CONFIGURAR APLICACION/DISPOSITIVO',
-    // '04.01.02 - SOPORTE PARA CONFIGURAR DISPOSITIVO',
+    '04.01.01 - SOPORTE PARA CONFIGURAR APLICACION',
+    '04.01.02 - SOPORTE PARA CONFIGURAR DISPOSITIVO',
 ];
 
 const pedido_4_2 = [
@@ -378,9 +368,9 @@ const pedido_4_4 = ['', '04.04.01 - MUDANZA DE PUESTO'];
 
 const pedido_4_5 = [
     '',
-    '04.05.01 - RETIRO DE SUMINISTROS',
-    '04.05.02 - ASISTENCIA TECNICA NOVATIUAM',
-    // '04.05.03 - IMPRESORA - ERROR FÍSICO',
+    '04.05.01 - RETIRO DE TONER IMPRESORA LEXMARK',
+    '04.05.02 - IMPRESORA - ERROR DE CONFIGURACIÓN',
+    '04.05.03 - IMPRESORA - ERROR FÍSICO',
     '04.05.04 - ASISTENCIA TECNICA LEXMARK',
 ];
 
@@ -393,7 +383,7 @@ const pedido_4_6 = [
     '04.06.05 - NUEVO DISCO PARA MI AREA',
     '04.06.06 - NUEVO GRUPO DE DIFUSION (MAIL)',
     '04.06.07 - TENGO UN INCONVENIENTE CON MI EQUIPAMIENTO',
-    // '04.06.08 - TENGO UN INCONVENIENTE CON VIDEO WALL',
+    '04.06.08 - TENGO UN INCONVENIENTE CON VIDEO WALL',
 ];
 
 const pedido_4_7 = [
@@ -449,9 +439,6 @@ const pedido_4_13 = [
     '04.13.04 - BAJA DE LÍNEA / TELÉFONO MÓVIL',
     '04.13.05 - PÉRDIDA / ROBO EQUIPO TELEFÓNICO',
     '04.13.06 - CAMBIO DE PLAN TELEFONÍA MÓVIL',
-    '04.13.07 - UNIR LINEA A FLOTA NARANJAX',
-    '04.13.08 - SOLICITAR E-SIM',
-    '04.13.09 - ACTIVAR ROAMING',
 ];
 
 const pedido_5_1 = ['', '05.01.01 - TARJETA', '05.01.02 - FINANCIERA'];
@@ -503,11 +490,7 @@ const pedido_7_2 = [
 
 const pedido_7_3 = ['', '07.03.01 - NUEVO PEDIDO DE CNAME CLOUDFLARE'];
 
-const pedido_8_1 = [
-    '', 
-    '08.01.01 - WIRU', 
-//    '08.01.02 - FINANCIERA'
-];
+const pedido_8_1 = ['', '08.01.01 - WIRU', '08.01.02 - FINANCIERA'];
 
 const pedido_8_2 = ['', '08.02.01 - WIRU', '08.02.02 - FINANCIERA'];
 
@@ -517,11 +500,11 @@ const pedido_9_1 = [
     '09.01.02 - TITULARES - ADICIONALES',
     '09.01.03 - TITULARES - $ FACTURACIÓN DE SEGUROS',
     '09.01.04 - TITULARES - MAMS',
-    '09.01.05 - TITULARES - SHARE DE ACREDITACIÓN EN CTA NX',
-    // '09.01.06 - TITULARES - SOLUCIONES DE COBRO',
+    '09.01.05 - TITULARES - PAGO RESUMEN IN APP',
+    '09.01.06 - TITULARES - SOLUCIONES DE COBRO',
     '09.01.07 - TITULARES - LVC - ATENCIÓN',
     '09.01.08 - TITULARES - CONSULTA SOBRE METAS/ANEXO',
-    // '09.01.09 - TITULARES - GASTOS DE SUCURSAL',
+    '09.01.09 - TITULARES - GASTOS DE SUCURSAL',
     // '09.01.10 - TITULARES - COMERCIOS ACTIVOS',
     // '09.01.11 - TITULARES - PAGO RESUMEN IN APP',
     // '09.01.12 - TITULARES - ALTA SEGUROS',
@@ -539,16 +522,15 @@ const pedido_9_2 = [
 
 const pedido_9_3 = [
     '',
-    '09.03.01 - MEDIUM MERCHANTS - FACTURACIÓN',
-    '09.03.02 - MEDIUM MERCHANTS - DIGITALIZACIÓN A TU COMERCIO',
-    '09.03.03 - MEDIUM MERCHANTS - FINANZAS EMBEBIDAS',
+    '09.03.01 - MEDIUM MERCHANTS - TPV',
+    '09.03.02 - MEDIUM MERCHANTS - GASTOS DE MERCHANTS',
 ];
 
 const pedido_9_4 = [
     '',
     '09.04.01 - SMALL MERCHANTS - MAMS',
-    '09.04.02 - SMALL MERCHANTS - SHARE DE ACREDITACIÓN EN CTA NX',
-    // '09.04.03 - SMALL MERCHANTS - GASTOS DE MERCHANTS',
+    '09.04.02 - SMALL MERCHANTS - SOLUCIONES DE COBRO',
+    '09.04.03 - SMALL MERCHANTS - GASTOS DE MERCHANTS',
 ];
 
 // const pedido_9_5 = [
@@ -611,22 +593,19 @@ const pedido_14_1 = [
     '14.01.08 - COMERCIOS NARANJA X',
 ];
 
- const pedido_14_2 = [
-   '',
-   '14.02.01 - INCONVENIENTES CARGA PROMOCIONES',
-   '14.02.02 - INCONVENIENTES BILLETERA VIRTUAL (APP NX O MODO)',
-   '14.02.03 - INCONVENIENTES CON PORTAL DE ALTAS GALICIA',
-   '14.02.04 - DEMORAS ACREDITACIÓN VENTAS NAVE',
-   '14.02.05 - OTRAS CONSULTAS, PEDIDOS  O RECLAMOS NAVE',
-];
+// const pedido_14_2 = [
+//   "",
+//   "14.02.01 - REVENTA",
+//   // "14.02.02 - RED COMERCIAL",
+//   // "14.02.03 - PROMOCIONES",
+// ];
 
 const pedido_14_3 = [
     '',
     // "14.03.01 - APERTURA / ORIGINACION DE TARJETAS",
     '14.03.02 - EMBOZADO DE TARJETAS',
-    '14.03.03 - LOTEOS',
-    '14.03.04 - OTRAS MARCAS',
-    '14.03.05 - DELIVERY',
+    "14.03.03 - LOTEOS",
+    "14.03.04 - OTRAS MARCAS",
 ];
 
 const pedido_14_4 = [
@@ -644,7 +623,7 @@ const pedido_14_6 = ['', '14.06.01 - NUEVO REGISTRO EVENTO NOC'];
 const pedido_14_7 = ['', '14.07.01 - PEDIDO DE CORE BANKING'];
 
 const pedido_14_8 = [
-    '',
+    '', 
     '14.08.01 - NO INGRESA A LA SECCIÓN TARJETAS',
     '14.08.02 - NO INGRESA A LA SECCIÓN TARJETA DE CRÉDITO',
     '14.08.03 - NO PUEDE ACTIVAR TARJETAS FÍSICAS',
@@ -654,37 +633,15 @@ const pedido_14_8 = [
     '14.08.07 - PRÓXIMOS VENCIMIENTOS',
     '14.08.08 - RESÚMENES ANTERIORES',
     '14.08.09 - TUS TARJETAS',
-    '14.08.10 - PAGO DE RESUMEN',
-    '14.08.11 - ADICIONALES EN NX SUITE',
+    '14.08.10 PAGO DE RESUMEN',
+    '14.08.11 ADICIONALES EN NX SUITE',
 ];
 
-const pedido_14_9 = ['', '14.09.01 - NUEVAS PROMOCIONES CON TARJETA DE DÉBITO'];
-
-const pedido_14_11 = ['', '14.11.01 - NUEVO PEDIDO DE LA HOME'];
-
-const pedido_14_12 = [
-    '',
-    '14.12.01 - Link de preevaluación - Prevaluador caído',
-    '14.12.03 - Link de preevaluacion - Prevaluador con respuestas diferentes a clientes con marca',
-    '14.12.04 - Solicitud de TC desde APP - Estamos evaluando tu perfil',
-    '14.12.05 - Solicitud de TC desde APP - Por el momento no podemos ofrecerte una tarjeta de crédito',
-    '14.12.06 - Solicitud de TC desde APP - Hubo un error y no pudimos generar tu contrato',
-    '14.12.07 - Solicitud de TC desde APP -  Problemas al cargar el domicilio en el contrato (Dif. con Merlin)',
-    '14.12.08 - Solicitud de TC desde APP -  Estamos preparando tus tarjetas',
-    '14.12.09 - Tarjeta de Crédito Virtual - Visualiza el error de la  Rata',
-    '14.12.10 - Realizar compra - CVV2 Tope',
-    '14.12.11 - Realizar compra - CVV Vencido',
-    '14.12.12 - Realizar compra - Sin Límites Asignados ($0)',
-    '14.12.13 Realizar compra - Límites asignados diferentes a la oferta',
+const pedido_14_9 = [
+    '', 
+    '14.09.01 - NUEVAS PROMOCIONES CON TARJETA DE DÉBITO',   
 ];
 
-const pedido_14_10 = [
-    '',
-    '14.10.01 - SECCION DE SEGUROS EN APP NO VISIBLE',
-    '14.10.02 - OTROS SEGUROS - PROBLEMAS EN LA CONTRATACION',
-    '14.10.03 - SEGURO DE AUTO/MOTOS - PROBLEMAS EN LA CONTRATACIÓN',
-    '14.10.04 - PROBLEMAS EN LA ATRIBUCION DE VENTA CON QR',
-];
 const pedido_15_1 = [
     '',
     '15.01.01 - NUEVA FEDERACIÓN',
@@ -716,7 +673,7 @@ const pedido_15_2 = [
     // "15.02.21 - INTERBANKING (ALTA DE CUENTA)",
     '15.02.22 - INTERBANKING (ALTA DE ESQUEMAS)',
     '15.02.23 - INTERBANKING (ALTA DE COLABORADORES)',
-    // '15.02.24 - VAULT',
+    '15.02.24 - VAULT',
     '15.02.25 - LÍMITE MERCAP - UNITRADE',
     // "15.02.26 - LÍMITES UNITRADE",
     '15.02.27 - PERMISOS STA - PREFIJOS',
@@ -785,13 +742,18 @@ const pedido_15_8 = [
     '',
     '15.08.01 - CREACIÓN DE LISTAS DE DISTRIBUCIÓN EN GSUITE',
     '15.08.02 - MODIFICACIÓN DE LISTAS DE DISTRIBUCIÓN EN GSUITE',
-    '15.08.03 - ALTA DE CASILLA GENERICA',
 ];
 
 const pedido_15_9 = [
     '',
     '15.09.01 - CREAR SUSCRIPCIÓN',
     '15.09.02 - ASIGNACIÓN DE PERMISOS SOBRE SUSCRIPCIÓN',
+];
+
+const pedido_15_10 = [
+    '',
+    '15.10.01 - APP/B2C - CREACIÓN',
+    '15.10.02 - APP/B2C - MODIFICACIÓN',
 ];
 
 const pedido_15_11 = ['', '15.11.01 - TENGO UN INCONVENIENTE'];
@@ -816,7 +778,6 @@ const pedido_15_15 = [
     '15.15.01 - ALTA DE NUEVO ROL BONX',
     '15.15.02 - MODIFICACIÓN DE ROL BONX',
     '15.15.03 - BAJA ROL BONX',
-    '15.15.04 - ALTA DE ENDPOINTS A ROLES/SCOPES  (PARA EL AUTHORIZER)',
 ];
 
 const pedido_15_16 = [
@@ -860,7 +821,6 @@ const pedido_15_20 = [
 const pedido_15_21 = [
     '',
     '15.21.01 - CUENTAS INVITADAS PARA COMPARTIR TABLEROS DE POWER BI',
-    '15.21.02 - CUENTAS INVITADAS PORTAL DEFENSA CONSUMIDOR',
 ];
 
 const pedido_15_22 = [
@@ -892,19 +852,6 @@ const pedido_15_26 = [
     '15.26.01 - CREACIÓN DE CERTIFICADO SSL/AUTO-FIRMADO/CA INTERNA',
     '15.26.02 - CREACIÓN DE LLAVES SSH',
 ];
-
-const pedido_15_27 = [
-    '',
-    '15.27.01 - ALTA DE VAULT',
-    '15.27.02 - BAJA DE VAULT',
-];
-
-const pedido_15_28 = [
-    '',
-    '15.28.01 - Creación de claves reCaptcha',
-    '15.28.02 - Edición de claves de reCaptcha (Agregar dominios, ver claves)',
-];
-
 const pedido_16_1 = [
     '',
     '16.01.01 - YO PRESENTE',
@@ -917,7 +864,7 @@ const pedido_16_1 = [
     // "16.01.08 - CABIFY",
     '16.01.09 - GUARDERIA',
     '16.01.10 - ACOMPAÑAMIENTO TERAPIAS',
-    // '16.01.11 - WELLHUB (ex gympass)',
+    '16.01.11 - GYMPASS',
 ];
 
 const pedido_16_2 = [
@@ -971,7 +918,6 @@ const pedido_16_5 = [
     '16.05.07 - TELEGRAMA DE RENUNCIA',
     '16.05.08 - CARTA CERTIFICADA DE ANSES',
     '16.05.09 - AFILIACION SINDICAL',
-    '16.05.10 - ABM PLAN DE SWISS MEDICAL',
 ];
 
 const pedido_16_6 = ['', '16.06.01 - INCONVENIENTES CON PLATAFORMAS DE PEOPLE'];
@@ -993,7 +939,6 @@ const pedido_16_10 = [
     '16.10.01 - UDEMY',
     '16.10.02 - ESPACIO NX',
     // '16.10.03 - ACADEMIA DATA & ANALYTICS',
-    '16.10.04 - CURSOS EXTERNOS',
 ];
 
 const pedido_17_1 = ['', '17.01.01 - CARGA DE CUIT GESTIONADO'];
@@ -1100,7 +1045,7 @@ const pedido_23_1 = [
     '23.01.06 - MODIFICACIÓN DE MARCAS [474]',
     '23.01.07 - HONORARIOS: LIQUIDACIONES Y FACTURACIÓN [461]',
     '23.01.08 - DATOS DEL ESTUDIO ASIGNADO [476]',
-
+    
     // '23.01.01 - AJUSTES POR BONIFICACIONES DE REFINANCIACIONES [490]',
     // '23.01.02 - AJUSTE PAGO CON QUITA EN CUOTAS [566]',
     // '23.01.04 - AUTORIZAR Y HABILITAR QUITA EXTRAJUDICIAL [488]',
@@ -1269,85 +1214,159 @@ const pedido_26_1 = [
     '',
     '26.01.01 - ONBOARDING MANUAL',
     '26.01.02 - ONBOARDING ISA',
+    '26.01.03 - prueba'
 ];
 
-const pedido_27_1 = [
-    '',
-    '27.01.01 - COBERTURA AUTOMATION MOBILE',
-    '27.01.02 - COBERTURA AUTOMATION WEB',
-    '27.01.03 - COBERTURA AUTOMATION BACKEND',
-    '27.01.04 - EJECUCION DE PIPELINE',
-    '27.01.05 - CARGA DE NVAULT',
-];
-
-const pedido_27_2 = [
-    '',
-    '27.02.01 - ELIMINAR FLUJOS AUTOMATIZADOS DEPRECADOS',
-    '27.02.02 -REFACTORIZAR FLUJOS AUTOMATIZADOS',
-];
-
-const pedido_27_3 = [
-    '',
-    '27.03.01 - CAPACITACIONES AUTOMATION',
-    '27.03.02 - METRICAS / DASHBOARDS',
-];
-
-const pedidos = [
-    pedido_1_1, pedido_1_2, pedido_1_3, pedido_1_4, pedido_1_5, pedido_1_6,
-    pedido_2_1, pedido_2_2, pedido_2_3,
-    pedido_3_1, pedido_3_2,
-    pedido_4_1, pedido_4_2, pedido_4_4, pedido_4_5, pedido_4_6, pedido_4_7, pedido_4_9, pedido_4_10, pedido_4_11, pedido_4_12, pedido_4_13,
-    pedido_5_1, pedido_5_2,
-    pedido_6_1, pedido_6_2, pedido_6_3,
-    pedido_7_1, pedido_7_2, pedido_7_3,
-    pedido_8_1, pedido_8_2,
-    pedido_9_1, pedido_9_2, pedido_9_3, pedido_9_4,
-    pedido_10_1,
-    pedido_12_1,
-    pedido_13_1, pedido_13_2,
-    pedido_14_1, pedido_14_2, pedido_14_3, pedido_14_4, pedido_14_5, pedido_14_6, pedido_14_7, pedido_14_8, pedido_14_9, pedido_14_10, pedido_14_11, pedido_14_12,
-    pedido_15_1, pedido_15_2, pedido_15_3, pedido_15_4, pedido_15_5, pedido_15_6, pedido_15_7, pedido_15_8, pedido_15_9, pedido_15_11, pedido_15_12, pedido_15_13, pedido_15_14, pedido_15_15, pedido_15_16, pedido_15_17, pedido_15_18, pedido_15_19, pedido_15_20, pedido_15_21, pedido_15_22, pedido_15_23, pedido_15_24, pedido_15_25, pedido_15_26, pedido_15_27, pedido_15_28,
-    pedido_16_1, pedido_16_2, pedido_16_3, pedido_16_4, pedido_16_5, pedido_16_6, pedido_16_7, pedido_16_8, pedido_16_9, pedido_16_10,
-    pedido_17_1,
-    pedido_18_1, pedido_18_2,
-    pedido_19_1, pedido_19_2, pedido_19_3, pedido_19_4, pedido_19_5, pedido_19_6,
-    pedido_20_1, pedido_20_2, pedido_20_3, pedido_20_4, pedido_20_5,
-    pedido_21_1, pedido_21_2, pedido_21_3, pedido_21_4, pedido_21_5,
-    pedido_22_1,
-    pedido_23_1, pedido_23_3, pedido_23_4, pedido_23_5,
-    pedido_24_1, pedido_24_2, pedido_24_3, pedido_24_4, pedido_24_5, pedido_24_6, pedido_24_7, pedido_24_8, pedido_24_9, pedido_24_10, pedido_24_11, pedido_24_12,
-    pedido_25_1, pedido_25_2, pedido_25_3, pedido_25_4, pedido_25_5,
-    pedido_26_1,
-    pedido_27_1, pedido_27_2, pedido_27_3
-];
-
-pedidos.forEach(pedido => tipologia.push(pedido));
+tipologia.push(pedido_1_1);
+tipologia.push(pedido_1_2);
+tipologia.push(pedido_1_3);
+tipologia.push(pedido_1_4);
+tipologia.push(pedido_1_5);
+tipologia.push(pedido_1_6);
+tipologia.push(pedido_10_1);
+tipologia.push(pedido_12_1);
+tipologia.push(pedido_13_1);
+tipologia.push(pedido_13_2);
+tipologia.push(pedido_14_1);
+tipologia.push(pedido_14_3);
+tipologia.push(pedido_14_4);
+tipologia.push(pedido_14_5);
+tipologia.push(pedido_14_6);
+tipologia.push(pedido_14_7);
+tipologia.push(pedido_14_8);
+tipologia.push(pedido_14_9);
+tipologia.push(pedido_15_1);
+tipologia.push(pedido_15_10);
+tipologia.push(pedido_15_11);
+tipologia.push(pedido_15_12);
+tipologia.push(pedido_15_13);
+tipologia.push(pedido_15_14);
+tipologia.push(pedido_15_15);
+tipologia.push(pedido_15_16);
+tipologia.push(pedido_15_17);
+tipologia.push(pedido_15_18);
+tipologia.push(pedido_15_19);
+tipologia.push(pedido_15_2);
+tipologia.push(pedido_15_20);
+tipologia.push(pedido_15_21);
+tipologia.push(pedido_15_22);
+tipologia.push(pedido_15_23);
+tipologia.push(pedido_15_24);
+tipologia.push(pedido_15_25);
+tipologia.push(pedido_15_26);
+tipologia.push(pedido_15_3);
+tipologia.push(pedido_15_4);
+tipologia.push(pedido_15_5);
+tipologia.push(pedido_15_6);
+tipologia.push(pedido_15_7);
+tipologia.push(pedido_15_8);
+tipologia.push(pedido_15_9);
+tipologia.push(pedido_16_1);
+tipologia.push(pedido_16_10);
+tipologia.push(pedido_16_2);
+tipologia.push(pedido_16_3);
+tipologia.push(pedido_16_4);
+tipologia.push(pedido_16_5);
+tipologia.push(pedido_16_6);
+tipologia.push(pedido_16_7);
+tipologia.push(pedido_16_8);
+tipologia.push(pedido_16_9);
+tipologia.push(pedido_17_1);
+tipologia.push(pedido_18_1);
+tipologia.push(pedido_18_2);
+tipologia.push(pedido_19_1);
+tipologia.push(pedido_19_2);
+tipologia.push(pedido_19_3);
+tipologia.push(pedido_19_4);
+tipologia.push(pedido_19_5);
+tipologia.push(pedido_19_6);
+tipologia.push(pedido_2_1);
+tipologia.push(pedido_2_2);
+tipologia.push(pedido_2_3);
+tipologia.push(pedido_20_1);
+tipologia.push(pedido_20_2);
+tipologia.push(pedido_20_3);
+tipologia.push(pedido_20_4);
+tipologia.push(pedido_20_5);
+tipologia.push(pedido_21_1);
+tipologia.push(pedido_21_2);
+tipologia.push(pedido_21_3);
+tipologia.push(pedido_21_4);
+tipologia.push(pedido_21_5);
+tipologia.push(pedido_22_1);
+tipologia.push(pedido_23_1);
+tipologia.push(pedido_23_3);
+tipologia.push(pedido_23_4);
+tipologia.push(pedido_23_5);
+tipologia.push(pedido_24_1);
+tipologia.push(pedido_24_10);
+tipologia.push(pedido_24_11);
+tipologia.push(pedido_24_12);
+tipologia.push(pedido_24_2);
+tipologia.push(pedido_24_3);
+tipologia.push(pedido_24_4);
+tipologia.push(pedido_24_5);
+tipologia.push(pedido_24_6);
+tipologia.push(pedido_24_7);
+tipologia.push(pedido_24_8);
+tipologia.push(pedido_24_9);
+tipologia.push(pedido_25_1);
+tipologia.push(pedido_25_2);
+tipologia.push(pedido_25_3);
+tipologia.push(pedido_25_4);
+tipologia.push(pedido_25_5);
+tipologia.push(pedido_26_1);
+tipologia.push(pedido_3_1);
+tipologia.push(pedido_3_2);
+tipologia.push(pedido_4_1);
+tipologia.push(pedido_4_10);
+tipologia.push(pedido_4_11);
+tipologia.push(pedido_4_12);
+tipologia.push(pedido_4_13);
+tipologia.push(pedido_4_2);
+tipologia.push(pedido_4_4);
+tipologia.push(pedido_4_5);
+tipologia.push(pedido_4_6);
+tipologia.push(pedido_4_7);
+tipologia.push(pedido_4_9);
+tipologia.push(pedido_5_1);
+tipologia.push(pedido_5_2);
+tipologia.push(pedido_6_1);
+tipologia.push(pedido_6_2);
+tipologia.push(pedido_6_3);
+tipologia.push(pedido_7_1);
+tipologia.push(pedido_7_2);
+tipologia.push(pedido_7_3);
+tipologia.push(pedido_8_1);
+tipologia.push(pedido_8_2);
+tipologia.push(pedido_9_1);
+tipologia.push(pedido_9_2);
+tipologia.push(pedido_9_4);
 
 function quitarAcentos(cadena) {
-    return cadena.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-  
-  function buscarCoincidencias() {
-    let input = quitarAcentos(document.getElementById("buscar").value.trim().toLowerCase()); // Obtener el valor del input y quitar acentos
-    let resultadosDiv = document.querySelector(".resultados");
-  
-    resultadosDiv.innerHTML = "";
-  
-    if (input === "") {
-      return;
-    }
-    tipologia.forEach(function (pedido) {
-      pedido.forEach(function (elemento) {
-        if (quitarAcentos(elemento.toLowerCase()).includes(input)) {
-          let item = document.createElement("li");
-          item.textContent = elemento;
-          resultadosDiv.appendChild(item);
-        }
-      });
-    });
-  }
-  document.getElementById("buscar").addEventListener("input", buscarCoincidencias);
+  return cadena.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
+function buscarCoincidencias() {
+  let input = quitarAcentos(document.getElementById("buscar").value.trim().toLowerCase()); // Obtener el valor del input y quitar acentos
+  let resultadosDiv = document.querySelector(".resultados");
+
+  resultadosDiv.innerHTML = "";
+
+  if (input === "") {
+    return;
+  }
+  tipologia.forEach(function (pedido) {
+    pedido.forEach(function (elemento) {
+      if (quitarAcentos(elemento.toLowerCase()).includes(input)) {
+        let item = document.createElement("li");
+        item.textContent = elemento;
+        resultadosDiv.appendChild(item);
+      }
+    });
+  });
+}
+document.getElementById("buscar").addEventListener("input", buscarCoincidencias);
 
 const $grupo = document.getElementById('grupo');
 const $tipo = document.getElementById('tipo');
@@ -1451,9 +1470,6 @@ $grupo.addEventListener('change', function () {
             break;
         case '26':
             mostrarOpciones(tipo_26, $tipo);
-            break;
-        case '27':
-            mostrarOpciones(tipo_27, $tipo);
             break;
     }
     // Limpiamos el select de pedido hasta que se elija el tipo
@@ -1596,9 +1612,9 @@ $tipo.addEventListener('change', function () {
         case '14.01':
             mostrarOpciones(pedido_14_1, $pedido);
             break;
-         case "14.02":
-           mostrarOpciones(pedido_14_2, $pedido);
-           break;
+        // case "14.02":
+        //   mostrarOpciones(pedido_14_2, $pedido);
+        //   break;
         case '14.03':
             mostrarOpciones(pedido_14_3, $pedido);
             break;
@@ -1619,15 +1635,6 @@ $tipo.addEventListener('change', function () {
             break;
         case '14.09':
             mostrarOpciones(pedido_14_9, $pedido);
-            break;
-        case '14.10':
-            mostrarOpciones(pedido_14_10, $pedido);
-            break;
-        case '14.11':
-            mostrarOpciones(pedido_14_11, $pedido);
-            break;
-        case '14.12':
-            mostrarOpciones(pedido_14_12, $pedido);
             break;
         case '15.01':
             mostrarOpciones(pedido_15_1, $pedido);
@@ -1655,6 +1662,9 @@ $tipo.addEventListener('change', function () {
             break;
         case '15.09':
             mostrarOpciones(pedido_15_9, $pedido);
+            break;
+        case '15.10':
+            mostrarOpciones(pedido_15_10, $pedido);
             break;
         case '15.11':
             mostrarOpciones(pedido_15_11, $pedido);
@@ -1703,12 +1713,6 @@ $tipo.addEventListener('change', function () {
             break;
         case '15.26':
             mostrarOpciones(pedido_15_26, $pedido);
-            break;
-        case '15.27':
-            mostrarOpciones(pedido_15_27, $pedido);
-            break;
-        case '15.28':
-            mostrarOpciones(pedido_15_28, $pedido);
             break;
         case '16.01':
             mostrarOpciones(pedido_16_1, $pedido);
@@ -1802,7 +1806,7 @@ $tipo.addEventListener('change', function () {
             break;
         case '23.01':
             mostrarOpciones(pedido_23_1, $pedido);
-            break;
+            break;       
         case '23.03':
             mostrarOpciones(pedido_23_3, $pedido);
             break;
@@ -1865,15 +1869,6 @@ $tipo.addEventListener('change', function () {
             break;
         case '26.01':
             mostrarOpciones(pedido_26_1, $pedido);
-            break;
-        case '27.01':
-            mostrarOpciones(pedido_27_1, $pedido);
-            break;
-        case '27.02':
-            mostrarOpciones(pedido_27_2, $pedido);
-            break;
-        case '27.03':
-            mostrarOpciones(pedido_27_3, $pedido);
             break;
     }
 });
